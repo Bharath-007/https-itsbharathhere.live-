@@ -11,19 +11,17 @@ import Cursor from "./components/Cursor";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/https-itsbharathhere.live-/">
       <div className="relative bg-black text-white min-h-screen">
         <Cursor />
         <Navbar />
         <AnimatePresence mode="wait">
-          <Router basename="/https-itsbharathhere.live-/">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </AnimatePresence>
         <Footer />
       </div>
