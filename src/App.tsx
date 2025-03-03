@@ -16,14 +16,12 @@ function App() {
         <Cursor />
         <Navbar />
         <AnimatePresence mode="wait">
-          <Router basename="/https-itsbharathhere.live-/">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Router>
+          <Routes>
+            <Route path="/" index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </AnimatePresence>
         <Footer />
       </div>
