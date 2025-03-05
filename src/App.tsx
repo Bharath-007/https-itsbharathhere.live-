@@ -11,7 +11,8 @@ import Cursor from "./components/Cursor";
 
 function App() {
   return (
-    <Router basename="/https-itsbharathhere.live-/">
+    <Router basename="/">
+      {/* <Router basename="/https-itsbharathhere.live-/"> */}
       <div className="relative bg-black text-white min-h-screen">
         <Cursor />
         <Navbar />
